@@ -1,0 +1,77 @@
+@media(max-width: 1280px) {
+
+    .cabecalho {
+        padding: 30px;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+        gap: 30px ;
+    }
+
+    .home .informacoes {
+        max-width: 100%;
+        text-align: center;
+        align-items: center ;
+    }
+
+    .projetos .container-projetos {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 665px) {
+    .cabecalho .menu li a {
+        font-size: 17px;
+    }
+
+    .cabecalho {
+        padding: 15px 10px;
+    }
+
+
+
+    .cabecalho .menu ul {
+        gap: 5px;
+    }
+
+    .cabecalho .menu li a {
+        padding: 3px 8px;
+    }
+}
+@media(max-width: 425px) {
+
+    .cabecalho {
+        justify-content:space-around;
+    }
+    .cabecalho .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho .menu li a {
+        font-size: 22px;
+    }
+
+    .home .informacoes h1 {
+        font-size: 30px;
+    }
+
+    .home .informacoes p {
+        font-size: 16px;
+    }
+
+    .home .container-foto img{
+        max-width: 320px;
+    }
+
+    .certificado-secao {
+        padding: 25px;
+    }
+
+    .projetos {
+        padding: 30px;
+    }
+}
