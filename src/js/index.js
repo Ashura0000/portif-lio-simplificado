@@ -17,12 +17,31 @@
 const botaoMostrarProjetos = document.querySelector('.btn-mostrar-projetos');
 const projetosInativos = document.querySelectorAll('.projeto:not(.ativo)');
 
+const botaoMostrarCertificados = document.querySelector('.btn-mostrar-certificados');
+const certificadosInativos = document.querySelectorAll('.certificado:not(.ativo');
+
+
+botaoMostrarCertificados.addEventListener('click', () => {
+    mostrarMaisCertificados();
+    esconderBotaoCertificados();
+})
+
 botaoMostrarProjetos.addEventListener('click', () => {
     mostrarMaisProjetos(); 
-    esconderBotao();
+    esconderBotaoProjeto();
 });
 
-function esconderBotao() {
+function esconderBotaoCertificados() {
+    botaoMostrarCertificados.classList.add("remover");
+}
+
+function mostrarMaisCertificados() {
+    certificadosInativos.forEach(certificados => {
+        certificados.classList.add('ativo');
+    });
+}
+
+function esconderBotaoProjeto() {
     botaoMostrarProjetos.classList.add("remover");
 }
 
